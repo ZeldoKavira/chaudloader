@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Install chaudloader (MMBN LC)
+Comment=One-click chaudloader install for Mega Man Battle Network Legacy Collection
+Icon=utilities-terminal
+Terminal=true
+Categories=Game;
+# Downloads and runs the latest installer script from the fork, then waits so you
+# can read the output before the window closes.
+Exec=bash -c 'curl -fsSL https://raw.githubusercontent.com/ZeldoKavira/chaudloader/main/steamdeck/install.sh | bash; echo; read -rp "Press Enter to close..."'
